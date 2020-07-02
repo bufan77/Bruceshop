@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'xadmin',
     'crispy_forms',
     'reversion',
+    'rest_framework',
 ]
 
 #重载系统的用户，让UserProfile生效
@@ -79,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'bruceshop',
         'USER':'root',
-        'PASSWORD':'12345678',
+        'PASSWORD':'root',
         'HOST':'127.0.0.1',
         'PORT':'3306',
         'OPTIONS':{'init_command':'SET default_storage_engine=INNODB;'}
